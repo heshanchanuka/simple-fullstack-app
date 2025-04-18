@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white font-sans p-10">
+    <h1 class="text-3xl mb-4">Leave a Message</h1>
+    <form id="messageForm" class="space-y-4">
+      <input
+        id="name"
+        class="p-2 w-full text-black"
+        placeholder="Your name"
+        required
+      />
+      <textarea
+        id="message"
+        class="p-2 w-full text-black"
+        placeholder="Your message"
+        required
+      ></textarea>
+      <button type="submit" class="bg-cyan-500 px-4 py-2 rounded">Send</button>
+    </form>
+
+    <div id="messages" class="mt-8 space-y-2"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
